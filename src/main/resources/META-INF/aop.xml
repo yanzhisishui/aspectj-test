@@ -1,0 +1,12 @@
+<!DOCTYPE aspectj PUBLIC "-//AspectJ//DTD//EN" "http://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+<aspectj>
+    <weaver options="-verbose">
+        <!-- 指定要织入的包范围 -->
+        <include within="com.example..*"/>
+    </weaver>
+
+    <aspects>
+        <!-- 注册切面类，使用织入器加载 -->
+        <aspect name="com.example.UserServiceAspect"/>
+    </aspects>
+</aspectj>
